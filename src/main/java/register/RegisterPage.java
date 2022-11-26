@@ -17,7 +17,7 @@ public class RegisterPage {
     private String clicarGenero = "radiooptions";
     private String selHobbies = "checkbox2";
     private String selSkill = "Skills";
-    private String selCountry = "countries";
+
 
 
     public void preencherNome(String Nome){
@@ -41,10 +41,6 @@ public class RegisterPage {
     public void selecionarSkill(String skill){
         Select select1 = new Select(driver.findElement(By.id(selSkill)));
         select1.selectByVisibleText(skill);
-    }
-    public void selecionarCountry(String country){
-        Select select2 = new Select(driver.findElement(By.id(selCountry)));
-        select2.selectByVisibleText(country);
     }
 }
 

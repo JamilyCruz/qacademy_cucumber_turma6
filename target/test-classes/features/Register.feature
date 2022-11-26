@@ -12,4 +12,4 @@
       E clico no genero FeMale
       E clico no Hobbies Movies
       E seleciono o Skill "Android"
-      E seleciono o Country
+
