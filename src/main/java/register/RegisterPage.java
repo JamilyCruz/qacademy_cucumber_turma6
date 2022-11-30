@@ -1,6 +1,7 @@
 package register;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 
@@ -36,6 +37,8 @@ public class RegisterPage {
         driver.findElement(By.name(clicarGenero)).click();
     }
     public void clicarHobbie(){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,550)", "");
         driver.findElement(By.id(selHobbies)).click();
     }
     public void selecionarSkill(String skill){
