@@ -10,7 +10,7 @@ pipeline {
 
                 }
          }
-        stage('Automacao Testes') {
+        stage('Testando') {
             steps {
                 bat "mvn -Dtest=Runner test"
             }
